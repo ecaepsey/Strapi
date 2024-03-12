@@ -4,7 +4,8 @@
   "info": {
     "singularName": "meal",
     "pluralName": "meals",
-    "displayName": "Meal"
+    "displayName": "Meal",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,7 +13,11 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "json"
+      "type": "string",
+      "unique": true
+    },
+    "caloriesValue": {
+      "type": "string"
     }
   }
 }

@@ -368,12 +368,14 @@ export interface ApiMealMeal extends Schema.CollectionType {
     singularName: 'meal';
     pluralName: 'meals';
     displayName: 'Meal';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    name: Attribute.JSON;
+    name: Attribute.String & Attribute.Unique;
+    caloriesValue: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
